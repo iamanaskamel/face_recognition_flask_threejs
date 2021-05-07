@@ -1,0 +1,21 @@
+<!--basic web HTML Page-->
+<html>
+<title>YORD | Anas Kamel Trainee </title>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5">Live Streaming</h3>
+            <!--calling video stream-->
+         <img id="bg" src="{{ url_for('video_feed') }}" width="50%">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<!--for Three.js Library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.min.js"></script>
+<!--calling the mask from static/threejs.js file-->
+<script type=text/javascript src="{{
+url_for('static', filename='Threejs.js') }}"></script>
